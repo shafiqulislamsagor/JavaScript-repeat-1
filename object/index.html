@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const car = {
+            name:"Fait",
+            model:"500",
+            color:"White",
+            moode:function(){
+                return this.name + "<br>" + this.color
+            }
+        };
+        document.getElementById('demo').innerHTML = car.name + "<br>" + car["model"] + "<br>" + car.moode;
+    </script>
+</body>
+</html>
