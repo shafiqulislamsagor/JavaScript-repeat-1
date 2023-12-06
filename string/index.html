@@ -7,10 +7,14 @@
 </head>
 <body>
     <p id="demo"></p>
+    <p id="de"></p>
     <script>
         let text = new String("Shafiqul \"Islam\" Sagor");
         let length = text.length;
         document.getElementById('demo').innerHTML = length + "<br>" + typeof(text);
+        let x = "Sagor,Habiba,Sidratul";
+        let slice = x.slice(6,12);
+        document.getElementById('de').innerHTML = slice;
     </script>
 </body>
 </html>
